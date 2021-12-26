@@ -1,0 +1,626 @@
+<http.client.HTTPResponse object at 0x7f3092b6cc40>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>USGS Mineral Resources On-Line Spatial Data</title>
+  <meta name="description" content="Mineral resources information, along with the geologic, geochemical, and geophysical information needed to understand and assess mineral resource potential.">
+  <meta name="keywords" content="mineral resources">
+  <meta name="keywords" content="geology">
+  <meta name="keywords" content="geochemistry">
+  <meta name="keywords" content="geophysics">
+  <meta name="keywords" content="USGS">
+  <meta name="author" content="U.S. Geological Survey">
+  <meta name="publisher" content="U.S. Geological Survey">
+  <meta name="revised" content="2019-09-26">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/common.css"/>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/custom.css"/>
+  <link rel="stylesheet" type="text/css" href="/jquery/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+  <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/jquery/jquery.tablesorter.min.js"></script>
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TKQR8KP');</script>
+  <style type="text/css">
+    .with-margin { margin-bottom: 1em; }
+    .top-margin { margin-top: 1em; }
+    .ml-4 { margin-left: 1.0em; }
+    .mb-2 { margin-bottom: 0.5em; }
+  </style>
+  <script type="text/javascript">function noop(){}</script>
+</head>
+<body>
+<!-- USGS header --><header id="navbar" class="header-nav"  role="banner"><div class="tmp-container"><div class="header-search"><a class="logo-header" href="https://www.usgs.gov/" title="Home"><img class="img"  src="/images/logo.png"  alt="Home" /></a></div></div></header>
+<div class="container">
+<div class="row with-margin">
+  <div class="col-xs-6 col-sm-8 col-md-9">
+    <h3>Mineral Resources Online Spatial Data</h3>
+    <p class="lead">Interactive maps and downloadable data for regional and global analysis.</p>
+  </div>
+  <div class="col-xs-6 col-sm-4 col-md-3 top-margin">
+    <div class="btn-group-vertical" role="group" aria-label="Major types of information here">
+      <a class="btn btn-primary" href="#mineral-resources">Mineral Resources</a>
+      <a class="btn btn-primary" href="#geologic-data">Geology</a>
+      <a class="btn btn-primary" href="#geochemistry">Geochemistry</a>
+      <a class="btn btn-primary" href="#geophysics">Geophysics</a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading" data-toggle="collapse" data-target="#maps" aria-controls="#maps" onclick="noop();"><h4 class="panel-title">Map interfaces <small>(click to collapse or expand)</small></h4></div>
+  <div class="panel-body collapse in" id="maps" aria-expanded="true">
+    <div class="row">
+      <div class="col-sm-4"><a href="/general/map-us.html"     target="_blank"><img src="/general/map-us.png"     class="img-responsive" alt="Full-screen map interface thumbnail image"     border="0" title="Full-screen map interface"/><br/>Conterminous US</a></div>
+      <div class="col-sm-4"><a href="/general/map-global.html" target="_blank"><img src="/general/map-global.png" class="img-responsive" alt="Global map interface thumbnail image"          border="0" title="Global map interface"/><br/>Global</a></div>
+      <div class="col-sm-4"><a href="/general/map-ak.html"     target="_blank"><img src="/general/map-ak.png"     class="img-responsive" alt="Alaska map interface thumbnail image"          border="0" title="Alaska map interface"/><br/>Alaska</a></div>
+    </div>
+  </div>		<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-info">
+  <div class="panel-heading" data-toggle="collapse" data-target="#topical-indexes" aria-controls="#topical-indexes" onclick="noop();"><h4 class="panel-title">Scientific topics</h4></div>
+  <div class="panel-body collapse in" id="topical-indexes" aria-expanded="true">
+    <div class="row mb-2">
+      <div class="col-sm-4"><a href="/catalog/" target="_blank"><img src="catalog/catalog.png" class="img-responsive" alt="Periodic table image"   border="0" title="Find data by scientific categories"/><br/>Choose Topics</a></div>
+      <div class="col-sm-4"><a href="/general/geography.php" target="_blank"><img src="catalog/geo-inventory.png" class="img-responsive" alt="Image of the interface" border="0" title="Select data by geographic area"/><br/>Choose Geographic Areas</a></div>
+      <div class="col-sm-4">
+        <div class="btn-group-vertical" role="group" aria-label="Major types of information here">
+          <a class="btn btn-sm btn-default" href="wms.html" title="GIS services conforming to the OGC Web Map Specification">WMS</a>
+          <a class="btn btn-sm btn-default" href="wfs.html" title="GIS services conforming to the OGC Web Feature Specification">WFS</a>
+          <a class="btn btn-sm btn-default" href="wmts.html" title="GIS services conforming to the OGC Web Map Tile Specification">WMTS</a>
+          <a class="btn btn-sm btn-default" href="catalog/api.php" title="Web service application programming interfaces">APIs</a>
+          <a class="btn btn-sm btn-default" href="metadata/" title="Formal documentation of the data using the Content Standar for Digital Geospatial Metadata">Metadata</a>
+        </div>
+      </div>
+    </div>
+<hr style="height: 2px; background-color: #006699;"/>
+<div class="row">
+  <form class="form-inline ml-4" accept-charset="UTF-8" action="https://search.usa.gov/search" id="search_form" method="GET">
+      <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+      <input id="affiliate" name="affiliate" type="hidden" value="usgs" />
+      <input type="hidden" name="sitelimit" id="sitelimit" value="mrdata.usgs.gov" />
+    <div class="form-group">
+      <input id="query" name="query" type="text" maxlength="255" title="Enter your search text" placeholder="Search..." class="form-control" />
+    </div>
+    <label class="radio-inline">
+      <input type="radio" id="allusgs" name="scope" value="all" /> All USGS
+    </label>
+    <label class="radio-inline">
+      <input type="radio" id="siteonly" name="scope" value="site" checked="checked" /> MRData only
+    </label>
+    <div class="form-group">
+      <button type="submit" name="commit" class="btn btn-sm btn-success">Search</button>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <div style="margin: 4px;">Can't find what you're looking for? Email <a href="mailto:pschweitzer@usgs.gov">pschweitzer@usgs.gov</a>, we'll point you in the right direction.</div>
+</div>
+  </div>		<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-success">
+  <div class="panel-heading" data-toggle="collapse" data-target="#mineral-resources" aria-controls="#mineral-resources"><h4 class="panel-title" onclick="noop();">Mineral resources</h4></div>
+  <div class="panel-body collapse in" id="mineral-resources" aria-expanded="true">
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#mineral-resource-occurrences" aria-controls="#mineral-resource-occurrences"><h4 class="panel-title" onclick="noop();">Mineral resource occurrences</h4></div>
+  <div class="panel-body collapse in" id="mineral-resource-occurrences" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/deposit/">USMIN mineral deposit database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/deposit/map-us.html"><img class="media-object" src="/deposit/deposit-small.png" alt="interactive map" width="384" height="205"/></a></div>
+        <div class="col-sm-6">A developing national-scale geospatial database that will be an authoritative source of information on the most important mines, mineral deposits, and mineral districts of the United States.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mrds/">Mineral Resources Data System (MRDS)</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mrds/map-graded.html"><img class="media-object" src="/mrds/map-graded.png" alt="interactive map" width="372" height="256"/></a></div>
+        <div class="col-sm-6">MRDS describes metallic and nonmetallic mineral resources throughout the world. Included are deposit name, location, commodity, and references.  Some records include deposit description, geologic characteristics, production, reserves, and resources. It includes the original MRDS and MAS/MILS data.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ardf/">Alaska Resource Data File (ARDF)</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ardf/map-ak.html"><img class="media-object" src="/ardf/ardf.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Descriptions of mines, prospects, and mineral occurrences in Alaska.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/major-deposits/">Major mineral deposits of the world</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/major-deposits/map-us.html"><img class="media-object" src="/major-deposits/ofr20051294-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Regional locations and general geologic setting of known deposits of major nonfuel mineral commodities.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/pp1802/">Global distribution of selected mines, deposits, and districts of critical minerals</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/pp1802/map-us.html"><img class="media-object" src="/pp1802/pp1802.png" alt="Interactive map interface" width="192" height="192"/></a></div>
+        <div class="col-sm-6">Approximate locations and short descriptions of mines, deposits, and districts where critical minerals are found. The critical minerals are discussed in USGS Professional Paper 1802, and many of these locations are described in further detail in that report.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#mineral-resource-assessments" aria-controls="#mineral-resource-assessments"><h4 class="panel-title" onclick="noop();">Mineral resource assessments</h4></div>
+  <div class="panel-body collapse in" id="mineral-resource-assessments" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/nmra/">National Mineral Resource Assessment 1998</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/nmra/map-us.html"><img class="media-object" src="/nmra/nmra-smaller.png" alt="interactive map" width="192" height="113"/></a></div>
+        <div class="col-sm-6">Estimates of the number and size of undiscovered mineral deposits in the US containing gold, silver copper, lead, and zinc.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sir20105090z/">Global assessment of undiscovered copper resources</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sir20105090z/map-us.html"><img class="media-object" src="/sir20105090z/sir20105090z.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Deposits, prospects, and permissive tracts for porphyry and sediment-hosted copper resources worldwide, with estimates of undiscovered copper resources.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/dds-19/">Geology and resource assessment of Costa Rica</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/dds-19/map-us.html"><img class="media-object" src="/dds-19/dds-19.png" alt="interactive map" width="192" height="191"/></a></div>
+        <div class="col-sm-6">Geologic map at 1:500,000 scale, digitized from USGS I-1865. Includes mines, prospects, and occurrences, permissive tracts for several mineral deposit types, and gravity anomaly contours.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/SaMiRA/">Sagebrush mineral resource assessment data sources</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/SaMiRA/map.html"><img class="media-object" src="/SaMiRA/fs20163074-study-areas-1000px.jpg" alt="interactive map" width="192" height="192"/></a></div>
+        <div class="col-sm-6">List of USGS information resources used in carrying out the Sagebrush Mineral Resource Assessment in 2016.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#mineral-deposits-of-specific-types" aria-controls="#mineral-deposits-of-specific-types"><h4 class="panel-title" onclick="noop();">Mineral deposits of specific types</h4></div>
+  <div class="panel-body collapse in" id="mineral-deposits-of-specific-types" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/vms/">Volcanogenic massive sulfide deposits</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/vms/map-us.html"><img class="media-object" src="/vms/vms-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Information on VMS deposits from around the world with new grade and tonnage models for three subtypes of VMS deposits and data allowing locations of all deposits to be plotted using GIS</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sedznpb/">Sediment-hosted zinc-lead deposits</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sedznpb/map-us.html"><img class="media-object" src="/sedznpb/sedznpb-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Information on sediment-hosted zinc-lead deposits from around the world with grade and tonnage models, a general classification based on geologic setting, mineralogy, with data allowing locations of these deposits to be plotted using GIS.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sedexmvt/">Mississippi Valley-Type and clastic-dominated sediment-hosted lead-zinc deposits</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sedexmvt/map-us.html"><img class="media-object" src="/sedexmvt/sedexmvt-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Global compilation of information on the sediment-hosted Pb-Zn deposits traditionally called sedimentary exhalative (SEDEX) and Mississippi Valley Type (MVT) deposits, including updated updated grade and tonnage data.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/porcu/">Porphyry copper deposits of the world</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/porcu/map-us.html"><img class="media-object" src="/porcu/porcu-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Global compilation of information on the porphyry copper deposits, including updated updated grade and tonnage data.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sedcu/">Sediment-hosted copper deposits of the world</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sedcu/map-us.html"><img class="media-object" src="/sedcu/sedcu-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Global compilation of information on the world's sediment-hosted copper deposits, including updated updated grade and tonnage data.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/nicrpge/">PGE-Ni-Cr deposit and occurrence bibliographic database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/nicrpge/map-us.html"><img class="media-object" src="/nicrpge/nicrpge-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">A compendium of previously published databases and database records that describe PGE, nickel, and chromium deposits and occurrences.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/carbonatite/">Carbonatites of the world, explored deposits of Nb and REE</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/carbonatite/map-us.html"><img class="media-object" src="/carbonatite/carbonatite-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Information on carbonatite deposits containing niobium and rare earth elements from around the world with grade and tonnage models, geologic setting, mineralogy, with data allowing locations of these deposits to be plotted using GIS.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ree/">Rare earth element mines, deposits, and occurrences</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ree/map-us.html"><img class="media-object" src="/ree/ree-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Location, geologic and mineral economic data for world rare earth mines, deposits, and occurrences compiled from published and non-published sources. Geographic coordinates are provided for 577 of the 799 deposits described here.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/laterite/">Ni-Co laterite deposits of the world</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/laterite/map-us.html"><img class="media-object" src="/laterite/laterite-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Location, type, mineralogy, name, tonnage and grade, and geological setting for 120 deposits of this type.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/asbestos/">Asbestos mines, prospects, and occurrences in the continental US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/asbestos/map-us.html"><img class="media-object" src="/asbestos/asbestos-us.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Location, mineralogy, name, development status for 913 historic mines, prospects, and occurrences of asbestos and fibrous amphiboles.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/phosphate/">World phosphate mines, deposits, and occurrences</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/phosphate/map-us.html"><img class="media-object" src="/phosphate/phosphate-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Location, geologic characteristics, and commodities for 1,635 phosphate mines, deposits, or occurrences worldwide</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ofr20151121/">Phosphate occurrence and potential of south Asia</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ofr20151121/map-us.html"><img class="media-object" src="/ofr20151121/ofr20151121.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Locations of known phosphate occurrences in this area, with geologic units in which such deposits may occur.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/podchrome/">Podiform chromite deposits</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/podchrome/map-us.html"><img class="media-object" src="/podchrome/podchrome-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Location and characteristics of 1,124 individual podiform chromite mineral deposits, with grade and tonnage models for chromium as well as several related elements.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sedau/">Sediment-hosted gold deposits</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sedau/map-us.html"><img class="media-object" src="/sedau/sedau-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Location and characteristics of 123 sediment-hosted gold deposits worldwide, with grade and tonnage data.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/potash/">Evaporite-related potash resources worldwide</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/potash/map-us.html"><img class="media-object" src="/potash/potash-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Geographic distribution and characteristics of evaporite-related potash deposits and occurrences worldwide.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/pp577/">Mica deposits of the Blue Ridge in North Carolina</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/pp577/map-us.html"><img class="media-object" src="/pp577/pp577.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Muscovite from pegmatites intruded into metamorphic rocks. Point locations with characteristics of mines and prospects.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#mining-operation-and-prospecting" aria-controls="#mining-operation-and-prospecting"><h4 class="panel-title" onclick="noop();">Mining operation and prospecting</h4></div>
+  <div class="panel-body collapse in" id="mining-operation-and-prospecting" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/usmin/">Prospect- and mine-related features on USGS topographic maps</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/usmin/map-us.html"><img class="media-object" src="/usmin/usmin-large.png" alt="interactive map" width="320" height="224"/></a></div>
+        <div class="col-sm-6">Symbols indicating mining-related features digitized from historical USGS topographic maps in the conterminous US. Includes prospect pits, mine shafts and adits, quarries, open-pit mines, tailings piles and ponds, gravel and borrow pits, and other features.  Work is progressing from west to east.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/earthmri/focus-areas/">Earth MRI critical mineral focus areas</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/earthmri/focus-areas/map-focus2.html"><img class="media-object" src="/earthmri/focus-areas/emri-focus2-small.png" alt="interactive map" width="284" height="192"/></a></div>
+        <div class="col-sm-6">Locations of focus areas to be used in the Earth Mapping Resource Initiative (Earth MRI) for planning and collection of geophysical, geological, and topographic (lidar) data pertaining to the study of rare earth element resources in the US.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/earthmri/data-acquisition/">Earth MRI data acquisition projects</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/earthmri/data-acquisition/map-us.html"><img class="media-object" src="/earthmri/data-acquisition/map-small.png" alt="Map interface combining data acquisition project areas with pertinent USGS data." width="264" height="192"/></a></div>
+        <div class="col-sm-6">Geological, geophysical, geochemical, or lidar data acquisition projects funded by the Earth Mapping Resource Initiative (Earth MRI) pertaining to the study of critical mineral resources in the US.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/earthmri/geochemistry/">Earth MRI Geochemistry</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/earthmri/geochemistry/map-us.html"><img class="media-object" src="/earthmri/geochemistry/earthmrichem.png" alt="Map interface showing geochemical analysis." width="292" height="192"/></a></div>
+        <div class="col-sm-6">Geochemical data generated by projects funded by the Earth Mapping Resources Initiative</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mineplant/">Active mines and mineral plants in the US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mineplant/map-us.html"><img class="media-object" src="/mineplant/mineplant-us.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Mine plants and operations for commodities monitored by the National Minerals Information Center of the USGS. Operations included are those considered active in 2003 and surveyed by the USGS.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/copper/">World copper smelters</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/copper/map-us.html"><img class="media-object" src="/copper/cusmelters-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Locations and characteristics of the copper smelters throughout the world as of 2002.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mineral-operations/">Mineral operations outside the United States</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mineral-operations/map-us.html"><img class="media-object" src="/mineral-operations/minfac-global.png" alt="interactive map" width="180" height="90"/></a></div>
+        <div class="col-sm-6">Locations and characteristics of active mines and mineral plants</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mine-claim/">Mining claim activity on Federal land in the contiguous US and Alaska</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mine-claim/map-us.html"><img class="media-object" src="/mine-claim/mine-claim.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Number and type of mine claims located on Federal lands and registered with the Bureau of Land Management, by year from 1976 through 2008.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mine-photos/">Photographs of historical mining operations in Colorado and Utah</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mine-photos/photo.php?id=482"><img class="media-object" src="/mine-photos/photos/cp0169.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">A collection of photographs of mine sites, mining operations, and tailings taken prior to 1980 at a variety of sites throughout Colorado and Utah.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/mineral-value/">Value of mineral production by state in the US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/mineral-value/map-us.html"><img class="media-object" src="/mineral-value/minval.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">The value of mineral production by state in the United States. The data represent commodities covered by the National Minerals Information Center of the U.S. Geological Survey.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="https://pubs.usgs.gov/ds/1004/">Federal government mineral exploration-assistance program files</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href=""><img class="media-object" src="" alt="" width="" height=""/></a></div>
+        <div class="col-sm-6">Scanned documents describing applications for Federal assistance in exploring for certain strategic and critical minerals, including where the deposits were examined what minerals were found, and whether mining had occurred.  These files span the years 1950 to 1974.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/energy/">Coal mines and other energy resources</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href=""><img class="media-object" src="" alt="" width="" height=""/></a></div>
+        <div class="col-sm-6">We have no comprehensive database of coal mines, but can provide links to some online resources.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-success">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geologic-data" aria-controls="#geologic-data"><h4 class="panel-title" onclick="noop();">Geologic data</h4></div>
+  <div class="panel-body collapse in" id="geologic-data" aria-expanded="true">
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geologic-map-data" aria-controls="#geologic-map-data"><h4 class="panel-title" onclick="noop();">Geologic map data</h4></div>
+  <div class="panel-body collapse in" id="geologic-map-data" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/geology/state/">Geologic maps of US states</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geology/state/map-us.html"><img class="media-object" src="/geology/state/sgmc.png" alt="" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Digital geologic maps of the US states with consistent lithology, age, GIS database structure, and format</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/sim3340/">Geologic map of Alaska</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/sim3340/"><img class="media-object" src="/sim3340/sim3340-small.png" alt="Geologic map of Alaska with quadrangle boundaries" width="192" height="192"/></a></div>
+        <div class="col-sm-6">Digital compilation and reinterpretation of published and unpublished geologic mapping of Alaska.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ds-898/">Basement domains of the conterminous US and Alaska</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ds-898/map-us.html"><img class="media-object" src="/ds-898/ds898.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Seventy-seven major components of the North American continent were delineated at a general scale (1:5,000,000); including the general composition, geological environment, and types of primary metals endowments that can be expected in each domain.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/geology/us/">Geology of the conterminous United States</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geology/us/map-us.html"><img class="media-object" src="/geology/us/kb.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">A digital version of the King and Beikman (1974) Geologic Map of the United States, originally published at a scale of 1:2,500,000. It excludes Alaska and Hawaii.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/geology/pr/">Geology of Puerto Rico</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geology/pr/map-pr.html"><img class="media-object" src="/geology/pr/pr.png" alt="interactive map" width="180" height="70"/></a></div>
+        <div class="col-sm-6">Geologic units and faults from USGS Open File Report 98-38, concerning assessment of the mineral resources of Puerto Rico</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/surficial-mineralogy/usminmap/">Large-area material map of the conterminous US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/surficial-mineralogy/usminmap/map-us.html"><img class="media-object" src="/surficial-mineralogy/usminmap/usminmap-small.png" alt="interactive map" width="192" height="120"/></a></div>
+        <div class="col-sm-6">Maps of exposed surface mineral groups derived from automated spectral analysis of satellite and airborne imaging systems; these data suggest areas that may contain mineral deposits of various types.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/surficial-mineralogy/ofr-2013-1139/">Maps of hydrothermal alteration in the Basin and Range province of the US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/surficial-mineralogy/ofr-2013-1139/map-us.html"><img class="media-object" src="/surficial-mineralogy/ofr-2013-1139/ofr-2013-1139-small.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Maps and data showing the geographic distribution of surficial minerals likely produced by hydrothermal alteration, which may indicate areas permissive of gold and copper mineral deposits.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-success">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geochemistry" aria-controls="#geochemistry"><h4 class="panel-title" onclick="noop();">Geochemistry</h4></div>
+  <div class="panel-body collapse in" id="geochemistry" aria-expanded="true">
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#national-geochemical-database" aria-controls="#national-geochemical-database"><h4 class="panel-title" onclick="noop();">National geochemical database</h4></div>
+  <div class="panel-body collapse in" id="national-geochemical-database" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/ngdb/rock/">National Geochemical Database: Rock</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ngdb/rock/map-us.html"><img class="media-object" src="/ngdb/rock/ngdbrock-us.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemical analysis of rock samples collected and analyzed by the USGS.  This dataset includes and supersedes rock data formerly released as &quot;Geochemistry of igneous rocks in the US extracted from the PLUTO database&quot;.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ngdb/sediment/">National Geochemical Database: Sediment</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ngdb/sediment/map-us.html"><img class="media-object" src="/ngdb/sediment/ngdbsed.png" alt="Interactive map showing NGDB sediment analyses" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemistry of sediments from the National Geochemical Database. Primarily inorganic elemental concentrations, most samples are of stream sediment in the continental US and Alaska.
+
+</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ngdb/soil/">National Geochemical Database: Soil</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ngdb/soil/map-us.html"><img class="media-object" src="/ngdb/soil/ngdbsoil.png" alt="Interactive map showing NGDB soil analyses" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemistry of soils from the National Geochemical Database. Primarily inorganic elemental concentrations, most samples are from the continental US and Alaska.
+</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ngdb/concentrate/">National Geochemical Database: Concentrate</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ngdb/concentrate/map-us.html"><img class="media-object" src="/ngdb/concentrate/ngdbconc.png" alt="Interactive map showing NGDB concentrate analyses" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemistry of concentrates from the National Geochemical Database. Primarily inorganic elemental concentrations, most samples are from the continental US and Alaska.
+</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#recent-focused-geochemical-surveys" aria-controls="#recent-focused-geochemical-surveys"><h4 class="panel-title" onclick="noop();">Recent, focused geochemical surveys</h4></div>
+  <div class="panel-body collapse in" id="recent-focused-geochemical-surveys" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/agdb/">Alaska Geochemical Database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/agdb/map-us.html"><img class="media-object" src="/agdb/agdb.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemical analysis of rock, sediment, soil, mineral, and heavy mineral concentrate samples in Alaska analyzed from 1962 through 2009.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ds-801/">Geochemical and mineralogical data from soils in the conterminous United States</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/ds-801/map-us.html"><img class="media-object" src="/ds-801/ds-801.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Systematic geochemical and mineralogical survey of soil horizons analyzed using a consistent set of methods, sample spacing 1 per 1,600 sq km.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="https://pubs.er.usgs.gov/publication/sir20175118">Geochemical and mineral maps from soils of the conterminous United States</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="https://pubs.usgs.gov/sir/2017/5118/"><img class="media-object" src="/ds-801/ofr-2014-1082-small.png" alt="Web interface with interpretation and maps" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Geochemical and mineralogical maps along with a histogram, boxplot, and empirical cumulative distribution function plot for each element or mineral whose data are provided in DS-801</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/geochem/">National Geochemical Survey database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geochem/map-us.html"><img class="media-object" src="/geochem/ngs.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">National-scale geochemical analysis of stream sediments and soils in the US, from existing data, reanalysis of existing samples, and new sampling.  Goal for sample density is one per 289 square km.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#older-geochemical-collections" aria-controls="#older-geochemical-collections"><h4 class="panel-title" onclick="noop();">Older geochemical collections</h4></div>
+  <div class="panel-body collapse in" id="older-geochemical-collections" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/nure/sediment/">Geochemistry of stream sediments in the US from the NURE-HSSR database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/nure/sediment/map-us.html"><img class="media-object" src="/nure/sediment/nuresed.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">National-scale geochemical analysis of stream sediments and soils in the US collected and analyzed under the National Uranium Resource Evaluation program.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/nure/water/">Geochemistry of water samples in the US from the NURE-HSSR database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/nure/water/map-us.html"><img class="media-object" src="/nure/water/nurewtr.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">National-scale geochemical analysis of water samples in the US collected and analyzed under the National Uranium Resource Evaluation program.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/nure-hssr/">Geochemical landscape of the conterminous US: maps of NURE-HSSR data</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/nure-hssr/Uspb.png"><img class="media-object" src="/nure-hssr/Uspb-small.png" alt="Lead (Pb)" width="192" height="100"/></a></div>
+        <div class="col-sm-6">Maps derived from a subset of the National Uranium Resource Evaluation Hydrogeochemical and Stream Sediment Reconnaissance data. Samples are from streams, lakes, ponds, springs, playas, and soils. Includes Na, Ti, Fe, Cu, Zn, As, Ce, Hf, Pb, Th, and U.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/ussoils/">Chemical analyses of soils and other surficial materials of the conterminous US ("Shacklette" data)</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href=""><img class="media-object" src="" alt="" width="" height=""/></a></div>
+        <div class="col-sm-6">Geochemistry of soils and other regoliths collected and analyzed by Hans Shacklette and colleagues from 1958 until about 1976.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-success">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geophysics" aria-controls="#geophysics"><h4 class="panel-title" onclick="noop();">Geophysics</h4></div>
+  <div class="panel-body collapse in" id="geophysics" aria-expanded="true">
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geophysical-surveys" aria-controls="#geophysical-surveys"><h4 class="panel-title" onclick="noop();">Geophysical surveys</h4></div>
+  <div class="panel-body collapse in" id="geophysical-surveys" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/airborne/">Airborne geophysical surveys</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/airborne/map-us.html"><img class="media-object" src="/airborne/airborne.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Airborne surveys measuring the earth's magnetic field, resistivity or other electromagnetic properties, or gamma ray emission over parts of North America.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geophysical-data-compilations" aria-controls="#geophysical-data-compilations"><h4 class="panel-title" onclick="noop();">Geophysical data compilations</h4></div>
+  <div class="panel-body collapse in" id="geophysical-data-compilations" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/magnetic/">Magnetic anomaly map of North America</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/magnetic/map-us.html"><img class="media-object" src="/magnetic/aeromag-na.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Airborne measurement of the earth's magnetic field over all of North America provides gridded data describing the magnetic anomaly caused by variations in earth materials and structure.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/gravity/">Gravity anomaly grids for the conterminous US</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/gravity/map-us.html"><img class="media-object" src="/gravity/bouguer/gravity-bouguer.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Measurements of the gravitational field vary slightly from place to place due to the composition and structure of Earth's crust. These digital grids describe the isostatic and Bouguer anomalies for the conterminous US.</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/radiometric/">Aeroradiometric grids for North America</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/radiometric/map-us.html"><img class="media-object" src="/radiometric/radiometric.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Gridded data generated by aerial sensing of radiation emanating from the earth's surface provides general estimates of the geographic distribution of Uranium, Thorium, and Potassium in surficial and bedrock units.  Covers the conterminous US, parts of Canada and parts of Alaska.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+<div class="panel panel-success">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geochronology" aria-controls="#geochronology"><h4 class="panel-title" onclick="noop();">Geochronology</h4></div>
+  <div class="panel-body collapse in" id="geochronology" aria-expanded="true">
+<div class="panel panel-warning">
+  <div class="panel-heading" data-toggle="collapse" data-target="#geochronological-data" aria-controls="#geochronological-data"><h4 class="panel-title" onclick="noop();">Geochronological data</h4></div>
+  <div class="panel-body collapse in" id="geochronological-data" aria-expanded="true">
+    <div class="panel">
+      <h4><a href="/geochron/">National Geochronological Database</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geochron/map-us.html"><img class="media-object" src="/geochron/geochron-us.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Radiometric and fission-track age determinations of geologic materials from the continental US and Alaska</div>
+      </div>
+    </div>
+    <div class="panel">
+      <h4><a href="/akages/">Radiometric ages of rocks from Alaska</a></h4>
+      <div class="row">
+        <div class="col-sm-6"><a href="/geochronology/akages.html"><img class="media-object" src="/akages/akages.png" alt="interactive map" width="192" height="128"/></a></div>
+        <div class="col-sm-6">Radiometric ages of rocks or minerals sampled from Alaska.  The data were collected from professional publications and/or received from researchers and used by permission.</div>
+      </div>
+    </div>
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>	<!-- panel-body -->
+</div>		<!-- panel -->
+  </div>
+<!-- USGS footer --><footer class="footer"><div class="tmp-container"><div class="footer-doi"><ul class="menu nav"><li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/privacy">DOI Privacy Policy</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/laws/policies_notices.html">Legal</a></li><li class="leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/laws/accessibility.html">Accessibility</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.usgs.gov/sitemap.html">Site Map</a></li><li class="last leaf menu-links menu-level-1"><a href="https://answers.usgs.gov/">Contact USGS</a></li></ul></div><hr/><div class="footer-doi"><ul class="menu nav"><li class="first leaf menu-links menu-level-1"><a href="https://www.doi.gov/">U.S. Department of the Interior</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.doioig.gov/">DOI Inspector General</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/">White House</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.whitehouse.gov/omb/management/egov/">E-gov</a></li><li class="leaf menu-links menu-level-1"><a href="https://www.doi.gov/pmb/eeo/no-fear-act">No Fear Act</a></li><li class="last leaf menu-links menu-level-1"><a href="https://www2.usgs.gov/foia">FOIA</a></li></ul></div><div class="footer-social-links"><ul class="social"><li class="follow">Follow</li><li class="twitter"><a href="https://twitter.com/usgs" target="_blank"><i class="fa fa-twitter-square"><span class="only">Twitter</span></i></a></li><li class="facebook"><a href="https://facebook.com/usgeologicalsurvey" target="_blank"><i class="fa fa-facebook-square"><span class="only">Facebook</span></i></a></li><li class="googleplus"><a href="https://plus.google.com/112624925658443863798/posts" target="_blank"><i class="fa fa-google-plus-square"><span class="only">Google+</span></i></a></li><li class="github"><a href="https://github.com/usgs" target="_blank"><i class="fa fa-github"><span class="only">GitHub</span></i></a></li><li class="flickr"><a href="https://flickr.com/usgeologicalsurvey" target="_blank"><i class="fa fa-flickr"><span class="only">Flickr</span></i></a></li><li class="youtube"><a href="http://youtube.com/usgs" target="_blank"><i class="fa fa-youtube-play"><span class="only">YouTube</span></i></a></li><li class="instagram"><a href="https://instagram.com/usgs" target="_blank"><i class="fa fa-instagram"><span class="only">Instagram</span></i></a></li></ul></div></div></footer><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQR8KP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</body>
+</html>
+
